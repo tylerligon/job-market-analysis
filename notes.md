@@ -29,3 +29,11 @@ extract skills
 store in Postgres
 run analysis
 do clustering last
+
+
+Everything will run through main.py, we just build each file and call the functions from main.py.
+To set up a .venv environment:
+python3 -m venv .venv
+source .venv/bin/activate
+
+Want to put all imports and libraries into requirements.txt for last
