@@ -1,3 +1,9 @@
+'''text
+.venv/
+__pycache__/
+*.pyc
 .env
 data/raw/
-__pycache__/
+data/merged/
+data/cleaned/
+outputs/
