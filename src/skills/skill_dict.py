@@ -1,5 +1,5 @@
 SKILLS = [
-        "python", "java", "c++", "c#", "javascript", "typescript", "r", "go", "swift", "kotlin", "matlab", "bash",
+        "python", "java", "c++", "c#", "javascript", "typescript", "R", "go", "swift", "kotlin", "matlab", "bash",
     "html", "css", "react", "node", "node.js", "flask", "django", "fastapi", "next.js", "angular", "vue", "bootstrap", 
     "tailwind", "jquery", "sql", "postgresql", "mysql", "mongodb", "sqlite", "redis", "nosql", "pandas", "numpy", 
     "scikit-learn", "tensorflow", "pytorch", "machine learning", "deep learning", "artificial intelligence", 
