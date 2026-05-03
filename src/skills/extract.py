@@ -1,3 +1,5 @@
+#scans title/decsriptions and returns skill founds for each jobs
+
 import re
 import pandas as pd
 from skills.skill_dict import SKILLS

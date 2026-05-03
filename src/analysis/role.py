@@ -1,0 +1,1 @@
+#compare skills patterns by role type, like SWE vs data sci, vs cybersecurity

@@ -1,5 +1,5 @@
 import pandas as pd
-
+##standardizes colums names, texts formatting, numeric fields
 def normalize_fields(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
 

@@ -1,3 +1,5 @@
+#RUN EVERYTHING THROUGH HERE
+#main pipeline runner, loads data, cleans it, extract skills, and saves output
 from ingest.load_data import load_dataset
 from clean.clean_jobs import clean_jobs
 from skills.extract import add_skills_column

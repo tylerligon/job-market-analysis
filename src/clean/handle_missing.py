@@ -1,5 +1,5 @@
 import pandas as pd
-
+#drops or fills in missing values for important cols
 def handle_missing(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
 

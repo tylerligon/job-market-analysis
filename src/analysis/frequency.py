@@ -1,3 +1,4 @@
+#look at frequencies, this is just a test
 from collections import Counter
 
 def top_skills(df, top_n=20):

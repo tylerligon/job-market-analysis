@@ -1,3 +1,5 @@
+#filters for entry-level, internship, junior, newgrad tech roles
+
 import pandas as pd
 
 ENTRY_PATTERNS = [

@@ -1,3 +1,5 @@
+#stores list of skills/keywords we wnat to detect in each job text
+
 SKILLS = [
         "python", "java", "c++", "c#", "javascript", "typescript", "R", "go", "swift", "kotlin", "matlab", "bash",
     "html", "css", "react", "node", "node.js", "flask", "django", "fastapi", "next.js", "angular", "vue", "bootstrap", 
