@@ -14,6 +14,11 @@ ENTRY_PATTERNS = [
     r"\bdeveloper i\b",
     r"\bscientist i\b",
     r"\blevel 1\b",
+    r"\bmid\b",
+    r"\bmid level\b",
+    r"\bphd\b",
+    r"\btemp\b",
+    r"\bcontract\b",
 ]
 
 TECH_TITLE_PATTERNS = [

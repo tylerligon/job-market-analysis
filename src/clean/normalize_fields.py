@@ -14,7 +14,8 @@ def normalize_fields(df: pd.DataFrame) -> pd.DataFrame:
 
     text_cols = [col for col in ["title", "company", "location", "job_description", "cleaned_description"] if col in df.columns]
     for col in text_cols:
-        df[col] = df[col].astype(str).str.strip().str.replace(r"\s+", " ", regex=True)
+        df[col] = df[col].apply(lambda x: x if pd.isna(x) else str(x).strip())
+        df[col] = df[col].apply(lambda x: x if pd.isna(x) else " ".join(x.split()))
 
     for col in ["min_salary", "max_salary", "mean_salary"]:
         if col in df.columns:
