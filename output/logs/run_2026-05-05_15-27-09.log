@@ -1,0 +1,4 @@
+2026-05-05 15:27:09,440 | INFO | Starting pipeline
+2026-05-05 15:27:09,440 | INFO | Logging to: output/logs/run_2026-05-05_15-27-09.log
+2026-05-05 15:27:27,526 | INFO | Kaggle original shape: (94529, 36)
+2026-05-05 15:27:27,526 | INFO | Fetching JSearch query: 'software engineer intern'

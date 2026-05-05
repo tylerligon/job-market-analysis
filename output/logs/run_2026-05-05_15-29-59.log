@@ -1,0 +1,45 @@
+2026-05-05 15:29:59,730 | INFO | Starting pipeline
+2026-05-05 15:29:59,730 | INFO | Logging to: output/logs/run_2026-05-05_15-29-59.log
+2026-05-05 15:30:17,815 | INFO | Kaggle original shape: (94529, 36)
+2026-05-05 15:30:17,818 | INFO | Fetching JSearch query: 'software engineer intern'
+2026-05-05 15:30:32,163 | INFO |   [software engineer intern] page 1: 10 jobs
+2026-05-05 15:30:32,673 | INFO | Fetching JSearch query: 'data science intern'
+2026-05-05 15:30:46,011 | INFO |   [data science intern] page 1: 10 jobs
+2026-05-05 15:30:46,523 | INFO | Fetching JSearch query: 'entry level software developer'
+2026-05-05 15:30:54,182 | INFO |   [entry level software developer] page 1: 10 jobs
+2026-05-05 15:30:54,688 | INFO | Fetching JSearch query: 'new grad software engineer'
+2026-05-05 15:31:00,731 | INFO |   [new grad software engineer] page 1: 10 jobs
+2026-05-05 15:31:01,239 | INFO | Fetching JSearch query: 'junior data analyst'
+2026-05-05 15:31:07,809 | INFO |   [junior data analyst] page 1: 10 jobs
+2026-05-05 15:31:08,317 | INFO | Fetching JSearch query: 'cybersecurity intern'
+2026-05-05 15:31:21,024 | INFO |   [cybersecurity intern] page 1: 10 jobs
+2026-05-05 15:31:21,534 | INFO | Fetching JSearch query: 'machine learning intern'
+2026-05-05 15:31:28,952 | INFO |   [machine learning intern] page 1: 10 jobs
+2026-05-05 15:31:29,469 | INFO | Fetching JSearch query: 'frontend developer entry level'
+2026-05-05 15:31:33,365 | INFO |   [frontend developer entry level] page 1: 10 jobs
+2026-05-05 15:31:33,873 | INFO | Fetching JSearch query: 'backend developer new grad'
+2026-05-05 15:31:39,538 | INFO |   [backend developer new grad] page 1: 10 jobs
+2026-05-05 15:31:40,047 | INFO | Fetching JSearch query: 'devops intern'
+2026-05-05 15:31:53,987 | INFO |   [devops intern] page 1: 9 jobs
+2026-05-05 15:31:54,568 | INFO | JSearch fetch complete: 98 unique jobs
+2026-05-05 15:31:54,568 | INFO | JSearch API original shape: (98, 22)
+2026-05-05 15:31:55,312 | INFO | Merged sources original shape: (94627, 36)
+2026-05-05 15:32:04,676 | INFO | Cleaned shape: (2329, 33)
+2026-05-05 15:32:05,060 | INFO | Saved cleaned_jobs.csv
+2026-05-05 15:32:18,807 | INFO | Sample titles with skills:
+2026-05-05 15:32:18,821 | INFO | 
+                                                                    title                                                                                    skills
+                      Jr Network Engineer/GNOSC Watch Officer IRES - SSFB                                                  [cybersecurity, linux, network security]
+                                                  Cybersecurity Analyst I                                                                           [cybersecurity]
+                                         2025 Cybersecurity Summer Intern                                                                           [cybersecurity]
+   Greif - Summer 2025 Cyber Security Intern, application via RippleMatch                                                                    [cybersecurity, linux]
+                 2025 Summer Intern Program - Information Security Intern                                                                           [cybersecurity]
+                       Security Engineer – Mid – (HSEN) (Splunk Engineer) [aws, azure, bash, cybersecurity, java, javascript, linux, network security, python, sql]
+                               Redis Cybersecurity Engineering Internship                                                                    [cybersecurity, redis]
+                                                       Security Analyst I                                                                        [network security]
+                                            Junior Cybersecurity Engineer                                                                           [cybersecurity]
+2025 Summer Internship Program - Supervision & Regulation (Cybersecurity)                                                                           [cybersecurity]
+2026-05-05 15:32:19,114 | INFO | Saved cleaned_jobs_with_skills.csv
+2026-05-05 15:32:19,121 | INFO | Top 20 skills: [('python', 1127), ('sql', 596), ('machine learning', 593), ('java', 541), ('javascript', 452), ('c++', 441), ('aws', 430), ('linux', 380), ('cybersecurity', 379), ('algorithms', 372), ('git', 350), ('statistics', 298), ('R', 292), ('c#', 285), ('react', 282), ('azure', 278), ('data analysis', 242), ('docker', 238), ('excel', 223), ('artificial intelligence', 220)]
+2026-05-05 15:32:19,134 | INFO | Jobs with no detected skills: 128
+2026-05-05 15:32:19,135 | INFO | Pipeline finished successfully

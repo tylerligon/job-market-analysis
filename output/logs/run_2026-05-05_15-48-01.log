@@ -1,0 +1,28 @@
+2026-05-05 15:48:01,570 | INFO | Starting pipeline
+2026-05-05 15:48:01,570 | INFO | Logging to: output/logs/run_2026-05-05_15-48-01.log
+2026-05-05 15:48:19,951 | INFO | Kaggle original shape: (94529, 36)
+2026-05-05 15:48:19,952 | INFO | Fetching JSearch query: 'software engineer intern'
+2026-05-05 15:48:25,683 | INFO |   [software engineer intern] page 1: 10 jobs
+2026-05-05 15:48:26,193 | INFO | Fetching JSearch query: 'data science intern'
+2026-05-05 15:48:29,997 | INFO |   [data science intern] page 1: 10 jobs
+2026-05-05 15:48:30,506 | INFO | Fetching JSearch query: 'entry level software developer'
+2026-05-05 15:48:37,416 | INFO |   [entry level software developer] page 1: 10 jobs
+2026-05-05 15:48:37,924 | INFO | Fetching JSearch query: 'new grad software engineer'
+2026-05-05 15:48:47,249 | INFO |   [new grad software engineer] page 1: 10 jobs
+2026-05-05 15:48:47,759 | INFO | Fetching JSearch query: 'junior data analyst'
+2026-05-05 15:48:58,671 | INFO |   [junior data analyst] page 1: 10 jobs
+2026-05-05 15:48:59,180 | INFO | Fetching JSearch query: 'cybersecurity intern'
+2026-05-05 15:49:02,785 | INFO |   [cybersecurity intern] page 1: 10 jobs
+2026-05-05 15:49:03,294 | INFO | Fetching JSearch query: 'machine learning intern'
+2026-05-05 15:49:16,207 | INFO |   [machine learning intern] page 1: 10 jobs
+2026-05-05 15:49:16,717 | INFO | Fetching JSearch query: 'frontend developer entry level'
+2026-05-05 15:49:22,262 | INFO |   [frontend developer entry level] page 1: 10 jobs
+2026-05-05 15:49:22,770 | INFO | Fetching JSearch query: 'backend developer new grad'
+2026-05-05 15:49:29,696 | INFO |   [backend developer new grad] page 1: 10 jobs
+2026-05-05 15:49:30,203 | INFO | Fetching JSearch query: 'devops intern'
+2026-05-05 15:49:39,047 | INFO |   [devops intern] page 1: 9 jobs
+2026-05-05 15:49:39,587 | INFO | JSearch fetch complete: 96 unique jobs
+2026-05-05 15:49:39,589 | INFO | JSearch API original shape: (96, 22)
+2026-05-05 15:49:40,163 | INFO | Merged sources original shape: (94625, 36)
+2026-05-05 15:49:49,337 | INFO | Cleaned shape: (2329, 33)
+2026-05-05 15:49:49,586 | INFO | Saved cleaned_jobs.csv
