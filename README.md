@@ -30,8 +30,45 @@ Raw Data → Ingest → Clean/Filter → Extract Skills → Store in Database �
 
 ## How to Run
 
+### 1. Create and activate the virtual environment
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
+```
+
+### 2. Install dependencies
+```bash
 pip install -r requirements.txt
-python main.py
+```
+
+### 3. Create a `.env` file
+Add:
+
+```env
+JSEARCH_API_KEY=your_jsearch_api_key
+DB_NAME=job_market_analysis
+DB_USER=postgres
+DB_PASSWORD=your_postgres_password
+DB_HOST=localhost
+DB_PORT=5432
+```
+
+### 4. Create the PostgreSQL database
+```bash
+createdb -U postgres job_market_analysis
+```
+
+### 5. Create the database tables
+```bash
+python3 -m src.db.create_tables
+```
+
+### 6. Run the full pipeline
+```bash
+python3 src/main.py
+```
+
+### 7. Insert cleaned data into PostgreSQL
+```bash
+python3 -m src.db.insert_jobs
+```

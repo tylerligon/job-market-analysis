@@ -1,5 +1,7 @@
 pandas
 requests
-psycopg2-binary
+openpyxl
+python-dotenv
+psycopg[binary]
 scikit-learn
 matplotlib

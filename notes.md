@@ -37,3 +37,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 
 Want to put all imports and libraries into requirements.txt for last
+
+createdb -U postgres job_market_analysis
+python3 src/db/create_tables.py
+python3 src/db/insert_jobs.py
