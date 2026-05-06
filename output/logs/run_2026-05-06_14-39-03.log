@@ -1,0 +1,62 @@
+2026-05-06 14:39:03,581 | INFO | Starting pipeline
+2026-05-06 14:39:03,581 | INFO | Logging to: output/logs/run_2026-05-06_14-39-03.log
+2026-05-06 14:39:21,388 | INFO | Kaggle original shape: (94529, 36)
+2026-05-06 14:39:21,390 | INFO | Fetching JSearch query: 'software engineer intern'
+2026-05-06 14:39:29,144 | INFO |   [software engineer intern] page 1: 10 jobs
+2026-05-06 14:39:29,655 | INFO | Fetching JSearch query: 'data science intern'
+2026-05-06 14:39:39,887 | INFO |   [data science intern] page 1: 10 jobs
+2026-05-06 14:39:40,396 | INFO | Fetching JSearch query: 'entry level software developer'
+2026-05-06 14:39:46,747 | INFO |   [entry level software developer] page 1: 10 jobs
+2026-05-06 14:39:47,256 | INFO | Fetching JSearch query: 'new grad software engineer'
+2026-05-06 14:39:59,513 | INFO |   [new grad software engineer] page 1: 10 jobs
+2026-05-06 14:40:00,022 | INFO | Fetching JSearch query: 'junior data analyst'
+2026-05-06 14:40:15,141 | WARNING |   [junior data analyst] page 1 failed: HTTPSConnectionPool(host='jsearch.p.rapidapi.com', port=443): Read timed out. (read timeout=15)
+2026-05-06 14:40:15,142 | INFO | Fetching JSearch query: 'cybersecurity intern'
+2026-05-06 14:40:29,955 | INFO |   [cybersecurity intern] page 1: 10 jobs
+2026-05-06 14:40:30,471 | INFO | Fetching JSearch query: 'machine learning intern'
+2026-05-06 14:40:30,665 | WARNING |   [machine learning intern] page 1 failed: 429 Client Error: Too Many Requests for url: https://jsearch.p.rapidapi.com/search?query=machine+learning+intern&page=1&num_pages=1&date_posted=month&employment_types=INTERN%2CFULLTIME
+2026-05-06 14:40:30,666 | INFO | Fetching JSearch query: 'frontend developer entry level'
+2026-05-06 14:40:30,826 | WARNING |   [frontend developer entry level] page 1 failed: 429 Client Error: Too Many Requests for url: https://jsearch.p.rapidapi.com/search?query=frontend+developer+entry+level&page=1&num_pages=1&date_posted=month&employment_types=INTERN%2CFULLTIME
+2026-05-06 14:40:30,828 | INFO | Fetching JSearch query: 'backend developer new grad'
+2026-05-06 14:40:31,004 | WARNING |   [backend developer new grad] page 1 failed: 429 Client Error: Too Many Requests for url: https://jsearch.p.rapidapi.com/search?query=backend+developer+new+grad&page=1&num_pages=1&date_posted=month&employment_types=INTERN%2CFULLTIME
+2026-05-06 14:40:31,005 | INFO | Fetching JSearch query: 'devops intern'
+2026-05-06 14:40:31,163 | WARNING |   [devops intern] page 1 failed: 429 Client Error: Too Many Requests for url: https://jsearch.p.rapidapi.com/search?query=devops+intern&page=1&num_pages=1&date_posted=month&employment_types=INTERN%2CFULLTIME
+2026-05-06 14:40:31,266 | INFO | JSearch fetch complete: 47 unique jobs
+2026-05-06 14:40:31,266 | INFO | JSearch API original shape: (47, 22)
+2026-05-06 14:40:33,197 | INFO | Merged sources original shape: (94576, 36)
+2026-05-06 14:40:46,837 | INFO | Cleaned shape: (2302, 33)
+2026-05-06 14:40:47,121 | INFO | Saved cleaned_jobs.csv
+2026-05-06 14:41:01,234 | INFO | Sample titles with skills:
+2026-05-06 14:41:01,279 | INFO | 
+                                                                    title                                                                                    skills
+                      Jr Network Engineer/GNOSC Watch Officer IRES - SSFB                                                  [cybersecurity, linux, network security]
+                                                  Cybersecurity Analyst I                                                                           [cybersecurity]
+                                         2025 Cybersecurity Summer Intern                                                                           [cybersecurity]
+   Greif - Summer 2025 Cyber Security Intern, application via RippleMatch                                                                    [cybersecurity, linux]
+                 2025 Summer Intern Program - Information Security Intern                                                                           [cybersecurity]
+                       Security Engineer – Mid – (HSEN) (Splunk Engineer) [aws, azure, bash, cybersecurity, java, javascript, linux, network security, python, sql]
+                               Redis Cybersecurity Engineering Internship                                                                    [cybersecurity, redis]
+                                                       Security Analyst I                                                                        [network security]
+                                            Junior Cybersecurity Engineer                                                                           [cybersecurity]
+2025 Summer Internship Program - Supervision & Regulation (Cybersecurity)                                                                           [cybersecurity]
+2026-05-06 14:41:01,279 | INFO | Role type counts:
+2026-05-06 14:41:01,290 | INFO | 
+role_type
+software         924
+data             645
+cybersecurity    448
+other            148
+devops_cloud      81
+it_support        56
+2026-05-06 14:41:01,290 | INFO | Top skills by role type:
+2026-05-06 14:41:01,310 | INFO | devops_cloud: [('devops', 50), ('python', 37), ('linux', 35), ('aws', 35), ('ci/cd', 28), ('kubernetes', 28), ('docker', 26), ('git', 22), ('bash', 21), ('java', 19)]
+2026-05-06 14:41:01,311 | INFO | cybersecurity: [('cybersecurity', 301), ('python', 94), ('linux', 75), ('network security', 64), ('excel', 59), ('aws', 51), ('azure', 36), ('java', 33), ('encryption', 30), ('go', 28)]
+2026-05-06 14:41:01,311 | INFO | data: [('python', 495), ('machine learning', 467), ('statistics', 257), ('sql', 251), ('algorithms', 225), ('R', 205), ('data analysis', 176), ('pytorch', 162), ('artificial intelligence', 146), ('tensorflow', 136)]
+2026-05-06 14:41:01,311 | INFO | it_support: [('excel', 15), ('sql', 9), ('go', 6), ('python', 6), ('cybersecurity', 5), ('power bi', 4), ('linux', 3), ('javascript', 3), ('redis', 3), ('business intelligence', 2)]
+2026-05-06 14:41:01,311 | INFO | software: [('python', 401), ('java', 368), ('javascript', 350), ('sql', 268), ('git', 242), ('c++', 241), ('react', 241), ('aws', 217), ('c#', 211), ('linux', 194)]
+2026-05-06 14:41:01,311 | INFO | other: [('python', 78), ('c++', 75), ('java', 50), ('javascript', 46), ('c#', 37), ('git', 32), ('linux', 28), ('R', 25), ('sql', 23), ('algorithms', 22)]
+2026-05-06 14:41:01,559 | INFO | Saved cleaned_jobs_with_skills.csv
+2026-05-06 14:41:01,561 | INFO | Top 20 skills: [('python', 1111), ('sql', 588), ('machine learning', 584), ('java', 536), ('javascript', 449), ('c++', 439), ('aws', 426), ('cybersecurity', 379), ('linux', 373), ('algorithms', 371), ('git', 346), ('statistics', 293), ('R', 288), ('c#', 285), ('react', 277), ('azure', 273), ('data analysis', 236), ('docker', 233), ('excel', 221), ('artificial intelligence', 218)]
+2026-05-06 14:41:01,571 | INFO | Top 20 skill pairs: [(('machine learning', 'python'), 481), (('python', 'sql'), 408), (('java', 'python'), 336), (('c++', 'python'), 318), (('algorithms', 'python'), 274), (('aws', 'python'), 270), (('algorithms', 'machine learning'), 238), (('R', 'python'), 234), (('python', 'statistics'), 233), (('javascript', 'python'), 216), (('java', 'javascript'), 214), (('machine learning', 'statistics'), 214), (('linux', 'python'), 213), (('c++', 'java'), 210), (('git', 'python'), 206), (('machine learning', 'sql'), 197), (('java', 'sql'), 196), (('machine learning', 'pytorch'), 186), (('javascript', 'react'), 184), (('javascript', 'sql'), 183)]
+2026-05-06 14:41:01,578 | INFO | Jobs with no detected skills: 126
+2026-05-06 14:41:01,578 | INFO | Pipeline finished successfully

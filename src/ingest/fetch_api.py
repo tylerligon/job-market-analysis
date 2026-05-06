@@ -82,6 +82,13 @@ def _fetch_one_query(query: str, num_pages: int = 3) -> list[dict]:
             if not jobs:
                 break
             time.sleep(0.5)
+        except requests.HTTPError as e:
+            status_code = e.response.status_code if e.response is not None else None
+            if status_code == 429:
+                raise
+
+            logging.warning(f"  [{query}] page {page} failed: {e}")
+            break
         except requests.RequestException as e:
             logging.warning(f"  [{query}] page {page} failed: {e}")
             break
@@ -152,7 +159,11 @@ def fetch_jsearch_jobs(
     all_jobs = []
     for q in queries:
         logging.info(f"Fetching JSearch query: '{q}'")
-        all_jobs.extend(_fetch_one_query(q, num_pages=num_pages))
+        try:
+            all_jobs.extend(_fetch_one_query(q, num_pages=num_pages))
+        except requests.HTTPError as e:
+            logging.warning(f"Rate limited by JSearch API, stopping api fetch: {e}")
+            break
 
     if not all_jobs:
         logging.warning("No jobs fetched from JSearch API.")

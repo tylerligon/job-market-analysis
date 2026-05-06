@@ -1,7 +1,7 @@
 ##create tables for db
 from pathlib import Path
 
-from src.db.connection import get_connection
+from db.connection import get_connection
 
 
 def create_tables(schema_path: str = "sql/schema.sql") -> None:

@@ -1,0 +1,33 @@
+2026-05-06 15:09:09,046 | INFO | Starting pipeline
+2026-05-06 15:09:09,046 | INFO | Logging to: output/logs/run_2026-05-06_15-09-09.log
+2026-05-06 15:09:27,234 | INFO | Kaggle original shape: (94529, 36)
+2026-05-06 15:09:27,236 | INFO | Fetching JSearch query: 'software engineer intern'
+2026-05-06 15:09:27,455 | WARNING |   [software engineer intern] page 1 failed: 429 Client Error: Too Many Requests for url: https://jsearch.p.rapidapi.com/search?query=software+engineer+intern&page=1&num_pages=1&date_posted=month&employment_types=INTERN%2CFULLTIME
+2026-05-06 15:09:27,457 | INFO | Fetching JSearch query: 'data science intern'
+2026-05-06 15:09:27,615 | WARNING |   [data science intern] page 1 failed: 429 Client Error: Too Many Requests for url: https://jsearch.p.rapidapi.com/search?query=data+science+intern&page=1&num_pages=1&date_posted=month&employment_types=INTERN%2CFULLTIME
+2026-05-06 15:09:27,617 | INFO | Fetching JSearch query: 'entry level software developer'
+2026-05-06 15:09:27,777 | WARNING |   [entry level software developer] page 1 failed: 429 Client Error: Too Many Requests for url: https://jsearch.p.rapidapi.com/search?query=entry+level+software+developer&page=1&num_pages=1&date_posted=month&employment_types=INTERN%2CFULLTIME
+2026-05-06 15:09:27,779 | INFO | Fetching JSearch query: 'new grad software engineer'
+2026-05-06 15:09:27,946 | WARNING |   [new grad software engineer] page 1 failed: 429 Client Error: Too Many Requests for url: https://jsearch.p.rapidapi.com/search?query=new+grad+software+engineer&page=1&num_pages=1&date_posted=month&employment_types=INTERN%2CFULLTIME
+2026-05-06 15:09:27,948 | INFO | Fetching JSearch query: 'junior data analyst'
+2026-05-06 15:09:28,112 | WARNING |   [junior data analyst] page 1 failed: 429 Client Error: Too Many Requests for url: https://jsearch.p.rapidapi.com/search?query=junior+data+analyst&page=1&num_pages=1&date_posted=month&employment_types=INTERN%2CFULLTIME
+2026-05-06 15:09:28,114 | INFO | Fetching JSearch query: 'cybersecurity intern'
+2026-05-06 15:09:28,277 | WARNING |   [cybersecurity intern] page 1 failed: 429 Client Error: Too Many Requests for url: https://jsearch.p.rapidapi.com/search?query=cybersecurity+intern&page=1&num_pages=1&date_posted=month&employment_types=INTERN%2CFULLTIME
+2026-05-06 15:09:28,278 | INFO | Fetching JSearch query: 'machine learning intern'
+2026-05-06 15:09:28,430 | WARNING |   [machine learning intern] page 1 failed: 429 Client Error: Too Many Requests for url: https://jsearch.p.rapidapi.com/search?query=machine+learning+intern&page=1&num_pages=1&date_posted=month&employment_types=INTERN%2CFULLTIME
+2026-05-06 15:09:28,430 | INFO | Fetching JSearch query: 'frontend developer entry level'
+2026-05-06 15:09:28,590 | WARNING |   [frontend developer entry level] page 1 failed: 429 Client Error: Too Many Requests for url: https://jsearch.p.rapidapi.com/search?query=frontend+developer+entry+level&page=1&num_pages=1&date_posted=month&employment_types=INTERN%2CFULLTIME
+2026-05-06 15:09:28,592 | INFO | Fetching JSearch query: 'backend developer new grad'
+2026-05-06 15:09:28,779 | WARNING |   [backend developer new grad] page 1 failed: 429 Client Error: Too Many Requests for url: https://jsearch.p.rapidapi.com/search?query=backend+developer+new+grad&page=1&num_pages=1&date_posted=month&employment_types=INTERN%2CFULLTIME
+2026-05-06 15:09:28,783 | INFO | Fetching JSearch query: 'devops intern'
+2026-05-06 15:09:28,939 | WARNING |   [devops intern] page 1 failed: 429 Client Error: Too Many Requests for url: https://jsearch.p.rapidapi.com/search?query=devops+intern&page=1&num_pages=1&date_posted=month&employment_types=INTERN%2CFULLTIME
+2026-05-06 15:09:28,941 | WARNING | No jobs fetched from JSearch API.
+2026-05-06 15:09:28,944 | INFO | JSearch API original shape: (0, 22)
+2026-05-06 15:09:29,168 | INFO | Merged sources original shape: (94529, 36)
+2026-05-06 15:09:40,962 | INFO | Cleaned shape: (2268, 33)
+2026-05-06 15:09:41,218 | INFO | Saved cleaned_jobs.csv
+2026-05-06 15:09:54,903 | INFO | Sample titles with skills:
+2026-05-06 15:09:55,163 | INFO | Saved cleaned_jobs_with_skills.csv
+2026-05-06 15:09:55,163 | INFO | Creating table databases if needed
+2026-05-06 15:09:55,300 | INFO | Resetting tables if needed
+2026-05-06 15:09:55,333 | INFO | Inserting cleaned data into PostgreSQL

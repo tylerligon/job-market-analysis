@@ -4,7 +4,7 @@ from typing import Any
 
 import pandas as pd
 
-from src.db.connection import get_connection
+from db.connection import get_connection
 
 
 JOB_DB_COLUMNS = [
@@ -33,12 +33,16 @@ def _nullify(value: Any):
     return value
 
 
-def _parse_skills(value: Any) -> list[str]:
-    if value is None or pd.isna(value):
+def _parse_skills(value) -> list[str]:
+    if value is None:
         return []
 
     if isinstance(value, list):
-        return sorted({str(skill).strip().lower() for skill in value if str(skill).strip()})
+        return sorted({
+            str(skill).strip().lower()
+            for skill in value
+            if str(skill).strip()
+        })
 
     if isinstance(value, str):
         text = value.strip()
@@ -48,13 +52,22 @@ def _parse_skills(value: Any) -> list[str]:
         try:
             parsed = ast.literal_eval(text)
             if isinstance(parsed, list):
-                return sorted(
-                    {str(skill).strip().lower() for skill in parsed if str(skill).strip()}
-                )
+                return sorted({
+                    str(skill).strip().lower()
+                    for skill in parsed
+                    if str(skill).strip()
+                })
         except (ValueError, SyntaxError):
             pass
 
-        return sorted({skill.strip().lower() for skill in text.split(",") if skill.strip()})
+        return sorted({
+            skill.strip().lower()
+            for skill in text.split(",")
+            if skill.strip()
+        })
+
+    if pd.isna(value):
+        return []
 
     return []
 
