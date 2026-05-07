@@ -132,9 +132,14 @@ def main():
     # -------------------------
     # ML: skill matrix
     # -------------------------
-    skill_matrix_df = build_skill_matrix(cleaned_df)
-    skill_matrix_df.to_csv(f"{processed_dir}/job_skill_matrix.csv", index=False)
-    logging.info("Saved job_skill_matrix.csv")
+    baseline_skill_matrix_df = build_skill_matrix(cleaned_df, min_skill_freq = 1, max_skill_ratio= 1.0)
+    baseline_skill_matrix_df.to_csv(f"{processed_dir}/job_skill_matrix_baseline.csv", index=False)
+    logging.info("Saved baseline job_skill_matrix.csv")
+
+    skill_matrix_df = build_skill_matrix(cleaned_df, min_skill_freq=20, max_skill_ratio=0.4)
+    skill_matrix_df.to_csv(f"{processed_dir}/job_skill_matrix_filtered.csv", index = False)
+    logging.info("Saved filtered job_skill_matrix")
+
 
     # -------------------------
     # ML: clustering

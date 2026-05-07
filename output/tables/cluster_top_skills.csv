@@ -1,31 +1,31 @@
 cluster,skill,count
-0,python,532
-0,machine learning,493
-0,algorithms,243
-0,statistics,241
-0,sql,241
-0,r,205
-0,pytorch,184
-0,tensorflow,156
-0,artificial intelligence,153
-0,data analysis,152
-1,cybersecurity,321
-1,python,253
-1,linux,177
-1,c++,168
-1,excel,142
-1,java,122
-1,aws,92
-1,sql,83
-1,c#,81
-1,algorithms,74
-2,javascript,382
-2,java,318
-2,python,305
-2,sql,258
-2,react,234
-2,git,225
-2,aws,208
-2,css,184
-2,html,177
-2,c#,168
+0,cybersecurity,335
+0,c++,208
+0,linux,197
+0,java,167
+0,excel,141
+0,sql,131
+0,aws,116
+0,c#,98
+0,r,97
+0,go,78
+1,machine learning,500
+1,algorithms,243
+1,statistics,237
+1,sql,211
+1,pytorch,183
+1,r,174
+1,artificial intelligence,154
+1,tensorflow,154
+1,deep learning,140
+1,data analysis,140
+2,javascript,371
+2,java,282
+2,sql,240
+2,react,231
+2,git,222
+2,aws,198
+2,css,185
+2,html,174
+2,c#,156
+2,docker,152
