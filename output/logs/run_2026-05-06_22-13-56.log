@@ -1,0 +1,13 @@
+2026-05-06 22:13:56,878 | INFO | Starting pipeline
+2026-05-06 22:13:56,878 | INFO | Logging to: output/logs/run_2026-05-06_22-13-56.log
+2026-05-06 22:14:17,196 | INFO | Kaggle original shape: (94529, 36)
+2026-05-06 22:14:17,197 | INFO | Skipping JSearch API fetch (USE_JSEARCH is false)
+2026-05-06 22:14:17,199 | INFO | Merged sources original shape: (94529, 36)
+2026-05-06 22:14:26,908 | INFO | Cleaned shape: (2268, 33)
+2026-05-06 22:14:27,165 | INFO | Saved cleaned_jobs.csv
+2026-05-06 22:14:41,321 | INFO | Sample titles with skills:
+2026-05-06 22:14:41,545 | INFO | Saved cleaned_jobs_with_skills.csv
+2026-05-06 22:14:41,545 | INFO | Creating table databases if needed
+2026-05-06 22:14:41,759 | INFO | Resetting tables if needed
+2026-05-06 22:14:41,845 | INFO | Inserting cleaned data into PostgreSQL
+2026-05-06 22:14:43,160 | INFO | Running analysis queries

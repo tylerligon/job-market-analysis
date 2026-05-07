@@ -1,0 +1,22 @@
+2026-05-06 22:18:20,683 | INFO | Starting pipeline
+2026-05-06 22:18:20,683 | INFO | Logging to: output/logs/run_2026-05-06_22-18-20.log
+2026-05-06 22:18:39,888 | INFO | Kaggle original shape: (94529, 36)
+2026-05-06 22:18:39,888 | INFO | Skipping JSearch API fetch (USE_JSEARCH is false)
+2026-05-06 22:18:39,889 | INFO | Merged sources original shape: (94529, 36)
+2026-05-06 22:18:56,402 | INFO | Cleaned shape: (2268, 33)
+2026-05-06 22:18:56,703 | INFO | Saved cleaned_jobs.csv
+2026-05-06 22:19:16,819 | INFO | Sample titles with skills:
+2026-05-06 22:19:17,156 | INFO | Saved cleaned_jobs_with_skills.csv
+2026-05-06 22:19:17,156 | INFO | Creating table databases if needed
+2026-05-06 22:19:17,424 | INFO | Resetting tables if needed
+2026-05-06 22:19:18,069 | INFO | Inserting cleaned data into PostgreSQL
+2026-05-06 22:19:22,577 | INFO | Running analysis queries
+2026-05-06 22:19:23,602 | INFO | k=3 silhouette_score=0.1313
+2026-05-06 22:19:23,721 | INFO | k=4 silhouette_score=0.1194
+2026-05-06 22:19:23,862 | INFO | k=5 silhouette_score=0.1022
+2026-05-06 22:19:23,990 | INFO | k=6 silhouette_score=0.1126
+2026-05-06 22:19:24,013 | INFO | Saved clustering_scores.csv
+2026-05-06 22:19:24,036 | INFO | Saved best_clustered_jobs.csv with k=3
+2026-05-06 22:19:24,043 | INFO | Saved best_cluster_counts.csv
+2026-05-06 22:19:24,043 | INFO | Best clustering result: k=3 with silhouette_score=0.1313
+2026-05-06 22:19:24,043 | INFO | Pipeline finished successfully

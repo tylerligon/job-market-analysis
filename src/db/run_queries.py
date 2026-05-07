@@ -29,12 +29,20 @@ QUERIES = {
 }
 
 
+def run_query_to_df(conn, query: str) -> pd.DataFrame:
+    with conn.cursor() as cur:
+        cur.execute(query)
+        rows = cur.fetchall()
+        columns = [desc[0] for desc in cur.description]
+    return pd.DataFrame(rows, columns=columns)
+
+
 def run_analysis_queries(output_dir: str = "output/tables") -> None:
     os.makedirs(output_dir, exist_ok=True)
 
     with get_connection() as conn:
         for name, query in QUERIES.items():
-            df = pd.read_sql(query, conn)
+            df = run_query_to_df(conn, query)
             out_path = f"{output_dir}/{name}.csv"
             df.to_csv(out_path, index=False)
             print(f"Saved {out_path}")

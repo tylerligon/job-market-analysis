@@ -1,0 +1,40 @@
+2026-05-06 22:29:21,342 | INFO | Starting pipeline
+2026-05-06 22:29:21,342 | INFO | Logging to: output/logs/run_2026-05-06_22-29-21.log
+2026-05-06 22:29:42,515 | INFO | Kaggle original shape: (94529, 36)
+2026-05-06 22:29:42,517 | INFO | Skipping JSearch API fetch (USE_JSEARCH is false)
+2026-05-06 22:29:42,517 | INFO | Using Kaggle data only
+2026-05-06 22:29:42,517 | INFO | Merged sources original shape: (94529, 36)
+2026-05-06 22:30:09,035 | INFO | Cleaned shape: (2268, 33)
+2026-05-06 22:30:26,075 | INFO | Saved cleaned_jobs.csv
+2026-05-06 22:30:26,324 | INFO | Saved cleaned_jobs_with_skills.csv
+2026-05-06 22:30:26,328 | INFO | Jobs with no detected skills: 125
+2026-05-06 22:30:26,328 | INFO | Sample titles with skills:
+2026-05-06 22:30:26,367 | INFO | 
+                                                                    title                                                                                    skills
+                      Jr Network Engineer/GNOSC Watch Officer IRES - SSFB                                                  [cybersecurity, linux, network security]
+                                                  Cybersecurity Analyst I                                                                           [cybersecurity]
+                                         2025 Cybersecurity Summer Intern                                                                           [cybersecurity]
+   Greif - Summer 2025 Cyber Security Intern, application via RippleMatch                                                                    [cybersecurity, linux]
+                 2025 Summer Intern Program - Information Security Intern                                                                           [cybersecurity]
+                       Security Engineer – Mid – (HSEN) (Splunk Engineer) [aws, azure, bash, cybersecurity, java, javascript, linux, network security, python, sql]
+                               Redis Cybersecurity Engineering Internship                                                                    [cybersecurity, redis]
+                                                       Security Analyst I                                                                        [network security]
+                                            Junior Cybersecurity Engineer                                                                           [cybersecurity]
+2025 Summer Internship Program - Supervision & Regulation (Cybersecurity)                                                                           [cybersecurity]
+2026-05-06 22:30:26,368 | INFO | Creating tables if needed
+2026-05-06 22:30:27,187 | INFO | Resetting tables
+2026-05-06 22:30:27,266 | INFO | Inserting cleaned data into PostgreSQL
+2026-05-06 22:30:29,170 | INFO | Running analysis queries
+2026-05-06 22:30:29,326 | INFO | Saved job_skill_matrix.csv
+2026-05-06 22:30:29,636 | INFO | k=3 silhouette_score=0.1313
+2026-05-06 22:30:29,768 | INFO | k=4 silhouette_score=0.1194
+2026-05-06 22:30:29,944 | INFO | k=5 silhouette_score=0.1022
+2026-05-06 22:30:30,100 | INFO | k=6 silhouette_score=0.1126
+2026-05-06 22:30:30,134 | INFO | Saved clustering_scores.csv
+2026-05-06 22:30:30,166 | INFO | Saved best_clustered_jobs.csv with k=3
+2026-05-06 22:30:30,170 | INFO | Saved best_cluster_counts.csv
+2026-05-06 22:30:30,170 | INFO | Best clustering result: k=3 with silhouette_score=0.1313
+2026-05-06 22:30:30,184 | INFO | Saved cluster_top_skills.csv
+2026-05-06 22:30:30,184 | INFO | Saved cluster_role_types.csv
+2026-05-06 22:30:30,185 | INFO | Saved cluster_top_titles.csv
+2026-05-06 22:30:30,185 | INFO | Pipeline finished successfully

@@ -1,0 +1,17 @@
+cluster,role_type,count
+0,data,486
+0,software,65
+0,other,20
+0,cybersecurity,6
+1,cybersecurity,414
+1,software,401
+1,data,137
+1,other,72
+1,it_support,55
+1,devops_cloud,48
+2,software,446
+2,other,53
+2,devops_cloud,33
+2,cybersecurity,18
+2,data,13
+2,it_support,1

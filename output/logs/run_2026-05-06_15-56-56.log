@@ -1,0 +1,17 @@
+2026-05-06 15:56:56,506 | INFO | Starting pipeline
+2026-05-06 15:56:56,506 | INFO | Logging to: output/logs/run_2026-05-06_15-56-56.log
+2026-05-06 15:57:16,078 | INFO | Kaggle original shape: (94529, 36)
+2026-05-06 15:57:16,078 | INFO | Fetching JSearch query: 'software engineer intern'
+2026-05-06 15:57:16,402 | WARNING | Rate limited by JSearch API, stopping api fetch: 429 Client Error: Too Many Requests for url: https://jsearch.p.rapidapi.com/search?query=software+engineer+intern&page=1&num_pages=1&date_posted=month&employment_types=INTERN%2CFULLTIME
+2026-05-06 15:57:16,408 | WARNING | No jobs fetched from JSearch API.
+2026-05-06 15:57:16,448 | INFO | JSearch API original shape: (0, 22)
+2026-05-06 15:57:17,029 | INFO | Merged sources original shape: (94529, 36)
+2026-05-06 15:57:36,762 | INFO | Cleaned shape: (2268, 33)
+2026-05-06 15:57:37,200 | INFO | Saved cleaned_jobs.csv
+2026-05-06 15:57:51,467 | INFO | Sample titles with skills:
+2026-05-06 15:57:51,778 | INFO | Saved cleaned_jobs_with_skills.csv
+2026-05-06 15:57:51,778 | INFO | Creating table databases if needed
+2026-05-06 15:57:52,610 | INFO | Resetting tables if needed
+2026-05-06 15:57:52,729 | INFO | Inserting cleaned data into PostgreSQL
+2026-05-06 15:57:55,439 | INFO | Running analysis queries
+2026-05-06 15:57:55,505 | INFO | Pipeline finished successfully
