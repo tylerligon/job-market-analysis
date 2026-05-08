@@ -60,6 +60,26 @@ job-market-analysis/
 - A `.env` file for database credentials
 - Optional: JSearch API key if live API fetching is enabled
 
+## Dataset
+
+The raw dataset is not included in this repository because it exceeds GitHub’s file size limit.
+
+To run this project locally:
+
+1. Download the dataset from the link below
+2. Place the file inside `data/raw/`
+3. Make sure the file is named `all_jobs.xlsx`
+
+Expected path:
+
+```text
+data/raw/all_jobs.xlsx
+```
+
+Download link: [Dataset Download Link](https://drive.google.com/drive/folders/1RDGRAkQW2BXw08vfN0wx8dtf7QKiB792?usp=sharing)
+
+> Note: The `data/raw/` folder is ignored in Git, so the dataset must be downloaded separately before running the pipeline.
+
 ## Environment Setup
 
 Create and activate a virtual environment:
@@ -122,7 +142,7 @@ This will:
 
 ## Main Outputs
 
-### Processed data
+### Processed Data
 Saved to `data/processed/`
 
 - `cleaned_jobs.csv`
@@ -131,14 +151,22 @@ Saved to `data/processed/`
 - `job_skill_matrix_filtered.csv`
 - `best_clustered_jobs.csv`
 
-### SQL analysis outputs
+### SQL Analysis Outputs
 Saved to `output/tables/`
 
 - `role_type_counts.csv`
 - `top_skills.csv`
 - `avg_salary_by_role.csv`
+- `total_jobs.csv`
+- `top_companies.csv`
+- `remote_vs_non_remote.csv`
+- `top_companies_by_avg_salary.csv`
+- `top_remote_role_types.csv`
+- `top_skills_software.csv`
+- `top_skills_data.csv`
+- `top_skills_cybersecurity.csv`
 
-### Clustering outputs
+### Clustering Outputs
 Saved to `output/tables/`
 
 - `clustering_scores.csv`
@@ -175,9 +203,3 @@ These clusters broadly correspond to:
 - JSearch support is implemented but disabled by default for safety and cost control.
 - The clustering stage uses a filtered job-skill matrix to reduce noise from overly common or overly rare skills.
 
-## Future Improvements
-
-- Improve skill extraction with more advanced NLP
-- Compare additional clustering algorithms
-- Add a user-facing interface for exploring skill gaps
-- Re-enable live API enrichment in a controlled way
