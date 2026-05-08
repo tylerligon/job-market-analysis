@@ -21,6 +21,8 @@ from db.run_queries import run_analysis_queries
 from ml.run_clustering import run_clustering_pipeline
 from ml.cluster_summary import build_cluster_summary_tables
 
+from viz.charts import make_all_charts
+
 
 def setup_logging():
     load_dotenv()
@@ -169,6 +171,14 @@ def main():
         logging.info("Saved cluster_role_types.csv")
         logging.info("Saved cluster_top_titles.csv")
 
+    #
+    # Visualizations: Charts
+    #
+
+    logging.info("Making all charts")
+    make_all_charts()
+    logging.info("Saved charts to output/figures")
+    
     logging.info("Pipeline finished successfully")
 
 

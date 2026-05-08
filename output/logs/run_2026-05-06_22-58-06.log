@@ -1,0 +1,32 @@
+2026-05-06 22:58:06,743 | INFO | Starting pipeline
+2026-05-06 22:58:06,743 | INFO | Logging to: output/logs/run_2026-05-06_22-58-06.log
+2026-05-06 22:58:27,136 | INFO | Kaggle original shape: (94529, 36)
+2026-05-06 22:58:27,136 | INFO | Skipping JSearch API fetch (USE_JSEARCH is false)
+2026-05-06 22:58:27,137 | INFO | Using Kaggle data only
+2026-05-06 22:58:27,137 | INFO | Merged sources original shape: (94529, 36)
+2026-05-06 22:58:41,282 | INFO | Cleaned shape: (2268, 33)
+2026-05-06 22:59:01,311 | INFO | Saved cleaned_jobs.csv
+2026-05-06 22:59:01,551 | INFO | Saved cleaned_jobs_with_skills.csv
+2026-05-06 22:59:01,560 | INFO | Jobs with no detected skills: 125
+2026-05-06 22:59:01,560 | INFO | Creating tables if needed
+2026-05-06 22:59:01,865 | INFO | Resetting tables
+2026-05-06 22:59:01,946 | INFO | Inserting cleaned data into PostgreSQL
+2026-05-06 22:59:07,957 | INFO | Running analysis queries
+2026-05-06 22:59:08,302 | INFO | Saved baseline job_skill_matrix.csv
+2026-05-06 22:59:08,383 | INFO | Saved filtered job_skill_matrix
+2026-05-06 22:59:08,793 | INFO | k=3 silhouette_score=0.1347
+2026-05-06 22:59:08,912 | INFO | k=4 silhouette_score=0.1122
+2026-05-06 22:59:09,016 | INFO | k=5 silhouette_score=0.0859
+2026-05-06 22:59:09,113 | INFO | k=6 silhouette_score=0.0987
+2026-05-06 22:59:09,132 | INFO | Saved clustering_scores.csv
+2026-05-06 22:59:09,154 | INFO | Saved best_clustered_jobs.csv with k=3
+2026-05-06 22:59:09,157 | INFO | Saved best_cluster_counts.csv
+2026-05-06 22:59:09,157 | INFO | Best clustering result: k=3 with silhouette_score=0.1347
+2026-05-06 22:59:09,166 | INFO | Saved cluster_top_skills.csv
+2026-05-06 22:59:09,166 | INFO | Saved cluster_role_types.csv
+2026-05-06 22:59:09,166 | INFO | Saved cluster_top_titles.csv
+2026-05-06 22:59:09,166 | INFO | Making all charts
+2026-05-06 22:59:10,679 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-05-06 22:59:10,679 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-05-06 22:59:10,896 | INFO | Saved charts to output/figures
+2026-05-06 22:59:10,896 | INFO | Pipeline finished successfully
